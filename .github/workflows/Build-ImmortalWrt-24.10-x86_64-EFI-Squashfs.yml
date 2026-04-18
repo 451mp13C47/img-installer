@@ -1,4 +1,4 @@
-name: "new-1"
+name: "Build ImmortalWrt 24.10 x86_64 EFI Squashfs Installer ISO"
 
 on:
   workflow_dispatch:
@@ -46,8 +46,8 @@ jobs:
       - name: "Publish"
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: "New-1-x86_64-ISO"
+          tag_name: "ImmortalWrt-24.10-x86_64-EFI-Squashfs-ISO"
           body_path: "${{ github.workspace }}/supportFiles/custom/info.md"
           files: |
-            output/new-1-installer-x86_64.iso
+            output/ImmortalWrt_24.10.5_x86_64.iso
           token: "${{ secrets.GITHUB_TOKEN }}"
