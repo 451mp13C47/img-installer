@@ -6,7 +6,7 @@ on:
       download_url:
         description: '请输入下载地址(扩展名 .img.gz/.img.xz/.img.zip)'
         required: true
-        default: 'https://fw0.koolcenter.com/iStoreOS/x86_64_efi/istoreos-24.10.6-2026041710-x86-64-squashfs-combined-efi.img.gz'
+        default: 'https://fw20.koolcenter.com/iStoreOS/x86_64_efi/istoreos-24.10.7-2026060510-x86-64-squashfs-combined-efi.img.gz'
 
 jobs:
   build-release:
