@@ -1,4 +1,4 @@
-name: "Build OpenWrt 25.12.4 x86_64 EFI Squashfs Installer ISO"
+name: "Build OpenWrt 25.12.5 x86_64 EFI Squashfs Installer ISO"
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
       download_url:
         description: '请输入下载地址(扩展名 .img.gz/.img.xz/.img.zip)'
         required: true
-        default: 'https://downloads.openwrt.org/releases/25.12.4/targets/x86/64/openwrt-25.12.4-x86-64-generic-squashfs-combined-efi.img.gz'
+        default: 'https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/openwrt-25.12.5-x86-64-generic-squashfs-combined-efi.img.gz'
 
 jobs:
   build-release:
@@ -46,7 +46,7 @@ jobs:
       - name: "Publish"
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: "OpenWrt-25.12.4-x86_64-EFI-Squashfs-ISO"
+          tag_name: "OpenWrt-25.12.5-x86_64-EFI-Squashfs-ISO"
           body_path: "${{ github.workspace }}/supportFiles/custom/info.md"
           files: |
             output/custom-installer-x86_64.iso
